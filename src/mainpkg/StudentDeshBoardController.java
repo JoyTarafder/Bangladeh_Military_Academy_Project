@@ -11,8 +11,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 /**
@@ -21,6 +24,11 @@ import javafx.stage.Stage;
  * @author Asus
  */
 public class StudentDeshBoardController implements Initializable {
+
+    @FXML private AnchorPane studentDeshBoardPane;
+    private Object getClass;
+    @FXML  private Button courseRegistation;
+
 
     /**
      * Initializes the controller class.
@@ -34,7 +42,25 @@ public class StudentDeshBoardController implements Initializable {
     private void signOutButtonOnClick(ActionEvent event) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("Logpage.fxml"));
         Scene newScene = new Scene (parent);
-        Stage newStage = new Stage();
+        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        newStage.setScene(newScene);
+        newStage.show();
+    }
+
+    @FXML
+    private void registrationBillOnClick(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("StudentCourseRegistation.fxml"));
+        Scene newScene = new Scene (parent);
+        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        newStage.setScene(newScene);
+        newStage.show();
+    }
+
+    @FXML
+    private void courseRegistationOnClick(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("StudentCourseRegistation.fxml"));
+        Scene newScene = new Scene (parent);
+        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         newStage.setScene(newScene);
         newStage.show();
     }

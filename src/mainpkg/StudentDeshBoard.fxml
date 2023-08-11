@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="678.0" prefWidth="922.0" style="-fx-background-color: FDF4F5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.StudentDeshBoardController">
+<AnchorPane id="AnchorPane" fx:id="studentDeshBoardPane" prefHeight="679.0" prefWidth="923.0" style="-fx-background-color: FDF4F5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.StudentDeshBoardController">
    <children>
       <VBox alignment="TOP_CENTER" prefHeight="678.0" prefWidth="268.0" style="-fx-background-color: #006a4e;">
          <children>
@@ -37,7 +37,7 @@
             <Font name="System Bold" size="23.0" />
          </font>
       </Button>
-      <Button layoutY="265.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="268.0" text="Registation Bill">
+      <Button layoutY="265.0" mnemonicParsing="false" onAction="#registrationBillOnClick" prefHeight="50.0" prefWidth="268.0" text="Registation Bill">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
@@ -78,7 +78,7 @@
             <Font name="System Bold" size="30.0" />
          </font>
       </Label>
-      <Button layoutY="206.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="268.0" text="Course Registation">
+      <Button layoutY="206.0" mnemonicParsing="false" onAction="#courseRegistationOnClick" prefHeight="50.0" prefWidth="268.0" text="Course Registation">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
