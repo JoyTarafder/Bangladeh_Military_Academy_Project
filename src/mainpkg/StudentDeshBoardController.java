@@ -26,8 +26,6 @@ import javafx.stage.Stage;
 public class StudentDeshBoardController implements Initializable {
 
     @FXML private AnchorPane studentDeshBoardPane;
-    private Object getClass;
-    @FXML  private Button courseRegistation;
 
 
     /**
@@ -47,9 +45,25 @@ public class StudentDeshBoardController implements Initializable {
         newStage.show();
     }
 
+//    private void registrationBillOnClick(ActionEvent event) throws IOException {
+//        Parent parent = FXMLLoader.load(getClass().getResource("StudentRegistationBillShow.fxml"));
+//        Scene newScene = new Scene (parent);
+//        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+//        newStage.setScene(newScene);
+//        newStage.show();
+//    }
+
+//    private void courseRegistationOnClick(ActionEvent event) throws IOException {
+//        Parent parent = FXMLLoader.load(getClass().getResource("StudentCourseRegistation.fxml"));
+//        Scene newScene = new Scene (parent);
+//        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+//        newStage.setScene(newScene);
+//        newStage.show();
+//    }
+
     @FXML
-    private void registrationBillOnClick(ActionEvent event) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("StudentCourseRegistation.fxml"));
+    private void registrationBillButtonOnClick(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("StudentRegistationBillShow.fxml"));
         Scene newScene = new Scene (parent);
         Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         newStage.setScene(newScene);
@@ -57,7 +71,61 @@ public class StudentDeshBoardController implements Initializable {
     }
 
     @FXML
-    private void courseRegistationOnClick(ActionEvent event) throws IOException {
+    private void OnlineLibraryOnClick(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("StudentOnlineLibrary.fxml"));
+        Scene newScene = new Scene (parent);
+        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        newStage.setScene(newScene);
+        newStage.show();
+    }
+
+    @FXML
+    private void viewCGPAButtonOnClick(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("StudentViewCGPA.fxml"));
+        Scene newScene = new Scene (parent);
+        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        newStage.setScene(newScene);
+        newStage.show();
+    }
+
+    @FXML
+    private void facultyEvalutionButtonOnClick(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("StudentFacultyEvalution.fxml"));
+        Scene newScene = new Scene (parent);
+        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        newStage.setScene(newScene);
+        newStage.show();
+    }
+
+    @FXML
+    private void viewTranscriptButtonOnClick(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("StudentViewTranscript.fxml"));
+        Scene newScene = new Scene (parent);
+        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        newStage.setScene(newScene);
+        newStage.show();
+    }
+
+    @FXML
+    private void helpCenterButtononClick(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("BMAHelpCenter.fxml"));
+        Scene newScene = new Scene (parent);
+        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        newStage.setScene(newScene);
+        newStage.show();
+    }
+
+    @FXML
+    private void trainingSessionButtonOnClick(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("TrainingSession.fxml"));
+        Scene newScene = new Scene (parent);
+        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        newStage.setScene(newScene);
+        newStage.show();
+    }
+
+    @FXML
+    private void courseRegistationButtonOnClick(ActionEvent event) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("StudentCourseRegistation.fxml"));
         Scene newScene = new Scene (parent);
         Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();

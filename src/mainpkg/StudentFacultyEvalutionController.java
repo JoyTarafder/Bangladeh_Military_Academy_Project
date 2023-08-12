@@ -21,7 +21,7 @@ import javafx.stage.Stage;
  *
  * @author Asus
  */
-public class StudentViewTranscriptController implements Initializable {
+public class StudentFacultyEvalutionController implements Initializable {
 
     /**
      * Initializes the controller class.
