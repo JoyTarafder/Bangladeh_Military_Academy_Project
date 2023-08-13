@@ -39,5 +39,14 @@ public class FacultyDeshBoardController implements Initializable {
         newStage.setScene(newScene);
         newStage.show();
     }
+
+    @FXML
+    private void trainingSessionButtonOnClick(ActionEvent event) throws IOException {
+        Parent parent = FXMLLoader.load(getClass().getResource("FacultyTrainingSessionScene.fxml"));
+        Scene newScene = new Scene (parent);
+        Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        newStage.setScene(newScene);
+        newStage.show();
+    }
     
 }
