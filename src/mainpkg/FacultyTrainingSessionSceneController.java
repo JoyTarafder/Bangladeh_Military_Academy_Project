@@ -51,13 +51,12 @@ public class FacultyTrainingSessionSceneController implements Initializable {
     @FXML
     private void addSessionButtonOnClick(ActionEvent event) {
         
-        Boolean addStatus = 
-                CITSAdmin.addNewFaculty(
+        Boolean addTrainingSession = 
+                TrainingSession.addNewTrainingSession(
                         trainingTopicTextField.getText(), 
-                        trainingDatePicker.getValue(), 
-)
+                        trainingDatePicker.getValue()
                 );
-        if(addStatus)
+        if(addTrainingSession)
         {
             Alert a = new Alert(Alert.AlertType.INFORMATION);
             a.setContentText("New training session is added successfully.");
