@@ -69,7 +69,7 @@
             <Font name="System Bold" size="23.0" />
          </font>
       </Button>
-      <Button layoutY="612.0" mnemonicParsing="false" onAction="#trainingSessionButtonOnClick" prefHeight="50.0" prefWidth="268.0" text="Training session">
+      <Button layoutY="612.0" mnemonicParsing="false" onAction="#trainingSessionButtonOnClick" prefHeight="50.0" prefWidth="268.0" text="Training Session">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
