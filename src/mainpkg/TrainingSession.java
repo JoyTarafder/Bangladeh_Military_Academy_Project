@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -16,7 +17,7 @@ import java.util.logging.Logger;
  *
  * @author Asus
  */
-public class TrainingSession {
+public class TrainingSession implements Serializable {
 
     public TrainingSession(String topic, LocalDate date) {
         //......... code
@@ -33,7 +34,7 @@ public class TrainingSession {
         ObjectOutputStream oos = null;
         
         try {
-            f = new File("Faculty.bin");
+            f = new File("TrainingSession.bin");
             if(f.exists()){
                 fos = new FileOutputStream(f,true);
                 oos = new AppendableObjectOutputStream(fos);                
@@ -51,7 +52,7 @@ public class TrainingSession {
             if(oos!=null) try {
                 oos.close();
             } catch (IOException ex1) {
-                Logger.getLogger(newTrainingSession.class.getName()).log(Level.SEVERE, null, ex1);
+//                Logger.getLogger(newTrainingSession.class.getName()).log(Level.SEVERE, null, ex1);
             }
             return false;
         }  

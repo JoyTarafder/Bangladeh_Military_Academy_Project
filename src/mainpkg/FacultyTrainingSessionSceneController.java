@@ -56,18 +56,19 @@ public class FacultyTrainingSessionSceneController implements Initializable {
                         trainingTopicTextField.getText(), 
                         trainingDatePicker.getValue()
                 );
-        if(addTrainingSession)
-        {
-            Alert a = new Alert(Alert.AlertType.INFORMATION);
-            a.setContentText("New training session is added successfully.");
-            a.showAndWait();
-        }
-        else
-        {
-            Alert a = new Alert(Alert.AlertType.ERROR);
-            a.setContentText("Oops! Something went wrong. \nTry later...");
-            a.showAndWait();
-        }  
+        
+            if(addTrainingSession)
+            {
+                Alert a = new Alert(Alert.AlertType.INFORMATION);
+                a.setContentText("New training session is added successfully.");
+                a.showAndWait();
+            }
+            else
+            {
+                Alert a = new Alert(Alert.AlertType.ERROR);
+                a.setContentText("Oops! Something went wrong. \nTry later...");
+                a.showAndWait();
+            }  
     }
     
 }
