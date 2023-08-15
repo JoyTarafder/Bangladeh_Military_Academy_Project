@@ -21,10 +21,10 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <TableView layoutX="106.0" layoutY="106.0" prefHeight="326.0" prefWidth="515.0">
+            <TableView fx:id="trainigSessionTableView" layoutX="113.0" layoutY="106.0" prefHeight="326.0" prefWidth="515.0">
               <columns>
-                <TableColumn prefWidth="156.0" text="Date" />
-                <TableColumn fx:id="trainingSessionTable" prefWidth="356.0" text="Topic" />
+                <TableColumn fx:id="DatetableColumn" prefWidth="156.0" text="Date" />
+                <TableColumn fx:id="topicTableColumn" prefWidth="356.0" text="Topic" />
               </columns>
             </TableView>
          </children>

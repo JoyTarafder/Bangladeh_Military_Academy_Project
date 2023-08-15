@@ -53,8 +53,8 @@ public class FacultyTrainingSessionSceneController implements Initializable {
         
         Boolean addTrainingSession = 
                 TrainingSession.addNewTrainingSession(
-                        trainingTopicTextField.getText(), 
-                        trainingDatePicker.getValue()
+                        trainingDatePicker.getValue(),
+                        trainingTopicTextField.getText()    
                 );
         
             if(addTrainingSession)

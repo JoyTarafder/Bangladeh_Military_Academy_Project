@@ -1,10 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
+
 package mainpkg;
 
+import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -14,21 +14,39 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
-/**
- * FXML Controller class
- *
- * @author Asus
- */
+
 public class TrainingSessionController implements Initializable {
 
-    /**
-     * Initializes the controller class.
-     */
+    @FXML private TableView<TrainingSession> trainigSessionTableView;
+    @FXML private TableColumn<TrainingSession, String> DatetableColumn;
+    @FXML private TableColumn<TrainingSession, String> topicTableColumn;
+
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        DatetableColumn.setCellValueFactory(new PropertyValueFactory <TrainingSession,String>( "date" ));
+        topicTableColumn.setCellValueFactory(new PropertyValueFactory<TrainingSession,String>( "topic" ));
+        
+        ObjectInputStream Ois = null;
+        TrainingSession tempTrainingSession = null;
+        try {
+                Ois = new ObjectInputStream (
+                new FileInputStream ("TrainingSession.bin"));
+//                tempTrainingSession = (TrainingSession)Ois.readObject();
+
+                while (true) {
+                    tempTrainingSession = (TrainingSession)Ois.readObject();
+                } 
+        }
+        catch(Exception e){
+                trainigSessionTableView.getItems().add(tempTrainingSession);
+        }
+  
     }    
 
     @FXML

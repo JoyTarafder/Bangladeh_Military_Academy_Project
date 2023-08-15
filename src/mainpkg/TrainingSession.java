@@ -18,15 +18,39 @@ import java.util.logging.Logger;
  * @author Asus
  */
 public class TrainingSession implements Serializable {
+    private LocalDate date;
+    private String topic;
 
-    public TrainingSession(String topic, LocalDate date) {
+    @Override
+    public String toString() {
+        return "TrainingSession{" + "topic=" + topic + ", date=" + date + '}';
+    }
+
+    public void setTopic(String topic) {
+        this.topic = topic;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
+    public String getTopic() {
+        return topic;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public TrainingSession( LocalDate date, String topic) {
         //......... code
+        
     }
     
-    public static boolean addNewTrainingSession( String topic, LocalDate date){
-        TrainingSession newTrainingSession = new TrainingSession(
-                topic, 
-                date
+    public static boolean addNewTrainingSession(LocalDate date,String topic){
+        TrainingSession newTrainingSession = new TrainingSession( 
+                date,
+                topic
         );
         
         File f = null;
