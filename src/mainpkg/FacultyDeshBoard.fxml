@@ -39,12 +39,12 @@
                   <Font name="System Bold" size="23.0" />
                </font>
             </Button>
-            <Button layoutY="265.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="268.0" text="Deshboard">
+            <Button layoutY="265.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="268.0" text="Attendance">
                <font>
                   <Font name="System Bold" size="23.0" />
                </font>
             </Button>
-            <Button layoutY="323.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="268.0" text="Deshboard">
+            <Button layoutY="323.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="268.0" text="Grade">
                <font>
                   <Font name="System Bold" size="23.0" />
                </font>
