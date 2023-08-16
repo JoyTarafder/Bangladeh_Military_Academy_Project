@@ -12,21 +12,21 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="studentDeshBoardPane" prefHeight="679.0" prefWidth="923.0" style="-fx-background-color: FDF4F5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.StudentDeshBoardController">
+<AnchorPane id="AnchorPane" fx:id="studentDeshBoardPane" prefHeight="679.0" prefWidth="923.0" style="-fx-background-color: #FFCCAA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.StudentDeshBoardController">
    <children>
       <VBox alignment="TOP_CENTER" prefHeight="678.0" prefWidth="268.0" style="-fx-background-color: #006a4e;">
          <children>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@userpicture.png" />
+                  <Image url="@CP1.png" />
                </image>
             </ImageView>
-            <Label text="Oppenheimer" textFill="#e8e0e0">
+            <Label text="Sabbir Hasan" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="27.0" />
                </font>
             </Label>
-            <Label layoutX="54.0" layoutY="128.0" text="Student" textFill="#aea2a2">
+            <Label layoutX="54.0" layoutY="128.0" text="Cadet" textFill="#e8e3e3">
                <font>
                   <Font size="20.0" />
                </font>
@@ -34,63 +34,104 @@
             <Line endX="100.0" startX="-160.0" stroke="WHITE" strokeWidth="8.0" />
          </children>
       </VBox>
-      <Button layoutX="748.0" layoutY="24.0" mnemonicParsing="false" onAction="#signOutButtonOnClick" prefHeight="39.0" prefWidth="152.0" style="-fx-background-color: #006a4e;" text="Sign out" textFill="WHITE">
+      <Button layoutX="748.0" layoutY="21.0" mnemonicParsing="false" onAction="#signOutButtonOnClick" prefHeight="39.0" prefWidth="152.0" style="-fx-background-color: #006a4e;" text="Sign out" textFill="WHITE">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
       </Button>
-      <Button layoutY="265.0" mnemonicParsing="false" onAction="#registrationBillButtonOnClick" prefHeight="50.0" prefWidth="268.0" text="Registation Bill">
+      <Button layoutX="-1.0" layoutY="288.0" mnemonicParsing="false" onAction="#registrationBillButtonOnClick" prefHeight="50.0" prefWidth="268.0" style="-fx-background-color: #4A4A4A;" text="Registation Bill" textFill="WHITE">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
       </Button>
-      <Button layoutY="323.0" mnemonicParsing="false" onAction="#OnlineLibraryOnClick" prefHeight="50.0" prefWidth="268.0" text="Online Library">
+      <Button layoutX="-1.0" layoutY="344.0" mnemonicParsing="false" onAction="#OnlineLibraryOnClick" prefHeight="50.0" prefWidth="268.0" style="-fx-background-color: #4A4A4A;" text="Online Library" textFill="WHITE">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
       </Button>
-      <Button layoutY="380.0" mnemonicParsing="false" onAction="#viewCGPAButtonOnClick" prefHeight="50.0" prefWidth="268.0" text="CGPA">
+      <Button layoutY="400.0" mnemonicParsing="false" onAction="#viewCGPAButtonOnClick" prefHeight="50.0" prefWidth="268.0" style="-fx-background-color: #4A4A4A;" text="CGPA" textFill="WHITE">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
       </Button>
-      <Button layoutY="437.0" mnemonicParsing="false" onAction="#facultyEvalutionButtonOnClick" prefHeight="50.0" prefWidth="268.0" text="Faculty Evalution">
+      <Button layoutY="456.0" mnemonicParsing="false" onAction="#facultyEvalutionButtonOnClick" prefHeight="50.0" prefWidth="268.0" style="-fx-background-color: #4A4A4A;" text="Faculty Evalution" textFill="WHITE">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
       </Button>
-      <Button layoutY="495.0" mnemonicParsing="false" onAction="#viewTranscriptButtonOnClick" prefHeight="50.0" prefWidth="268.0" text="Transcript">
+      <Button layoutY="512.0" mnemonicParsing="false" onAction="#viewTranscriptButtonOnClick" prefHeight="50.0" prefWidth="268.0" style="-fx-background-color: #4A4A4A;" text="Transcript" textFill="WHITE">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
       </Button>
-      <Button layoutY="554.0" mnemonicParsing="false" onAction="#helpCenterButtononClick" prefHeight="50.0" prefWidth="268.0" text="BMA Help Center">
+      <Button layoutY="568.0" mnemonicParsing="false" onAction="#helpCenterButtononClick" prefHeight="50.0" prefWidth="268.0" style="-fx-background-color: #4A4A4A;" text="BMA Help Center" textFill="WHITE">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
       </Button>
-      <Button layoutY="612.0" mnemonicParsing="false" onAction="#trainingSessionButtonOnClick" prefHeight="50.0" prefWidth="268.0" text="Training Session">
+      <Button layoutY="624.0" mnemonicParsing="false" onAction="#trainingSessionButtonOnClick" prefHeight="50.0" prefWidth="268.0" style="-fx-background-color: #4A4A4A;" text="Training Session" textFill="WHITE">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
       </Button>
-      <PieChart layoutX="661.0" layoutY="137.0" prefHeight="202.0" prefWidth="232.0" style="-fx-background-color: red;" />
-      <Label layoutX="307.0" layoutY="33.0" text="Student Overview">
+      <PieChart layoutX="661.0" layoutY="156.0" prefHeight="202.0" prefWidth="232.0" style="-fx-background-color: red;" />
+      <Label layoutX="300.0" layoutY="21.0" text="Cadet Overview">
          <font>
-            <Font name="System Bold" size="30.0" />
+            <Font name="System Bold" size="35.0" />
          </font>
       </Label>
-      <Button layoutY="206.0" mnemonicParsing="false" onAction="#courseRegistationButtonOnClick" prefHeight="50.0" prefWidth="268.0" text="Course Registation">
+      <Button layoutX="-1.0" layoutY="233.0" mnemonicParsing="false" onAction="#courseRegistationButtonOnClick" prefHeight="50.0" prefWidth="268.0" style="-fx-background-color: #4A4A4A;" text="Course Registation" textFill="WHITE">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
       </Button>
-      <TableView layoutX="464.0" layoutY="422.0" prefHeight="253.0" prefWidth="360.0">
+      <TableView layoutX="298.0" layoutY="400.0" prefHeight="253.0" prefWidth="594.0">
         <columns>
-          <TableColumn prefWidth="117.0" text="Course No" />
-          <TableColumn prefWidth="109.0" text="Section" />
-            <TableColumn prefWidth="133.0" text="Cri" />
+          <TableColumn prefWidth="235.0" text="Course No" />
+          <TableColumn prefWidth="178.0" text="Section" />
+            <TableColumn prefWidth="174.0" text="Credit" />
         </columns>
       </TableView>
+      <Label layoutX="726.0" layoutY="99.0" text="Chart">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="297.0" layoutY="174.0" text="Department :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Line endX="565.0" layoutX="357.0" layoutY="95.0" startX="-89.0" stroke="#0d83ba" strokeWidth="3.0" />
+      <Label layoutX="297.0" layoutY="213.0" text="Batch :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="298.0" layoutY="133.0" text="Cadet ID :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="407.0" layoutY="133.0" text="23101">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="438.0" layoutY="174.0" text="CSE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="213.0" text="2023">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="304.0" layoutY="347.0" text="Registration Courses :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
