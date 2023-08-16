@@ -18,6 +18,10 @@ import java.util.logging.Logger;
  * @author Asus
  */
 public class TrainingSession implements Serializable {
+
+    static void add(TrainingSession tempTrainingSession) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     private LocalDate date;
     private String topic;
 

@@ -2,10 +2,12 @@
 package mainpkg;
 
 import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
+import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -18,6 +20,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+import javax.swing.table.DefaultTableModel;
 
 
 public class TrainingSessionController implements Initializable {
@@ -31,24 +34,24 @@ public class TrainingSessionController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         DatetableColumn.setCellValueFactory(new PropertyValueFactory <TrainingSession,String>( "date" ));
         topicTableColumn.setCellValueFactory(new PropertyValueFactory<TrainingSession,String>( "topic" ));
-        
+     
         ObjectInputStream Ois = null;
         TrainingSession tempTrainingSession = null;
         try {
                 Ois = new ObjectInputStream (
                 new FileInputStream ("TrainingSession.bin"));
-//                tempTrainingSession = (TrainingSession)Ois.readObject();
-
                 while (true) {
                     tempTrainingSession = (TrainingSession)Ois.readObject();
+                    TrainingSession.add(tempTrainingSession);
+
                 } 
         }
         catch(Exception e){
-                trainigSessionTableView.getItems().add(tempTrainingSession);
-        }
+                trainigSessionTableView.getItems().addAll(tempTrainingSession);
   
-    }    
-
+      }   
+        
+    }
     @FXML
     private void backStudentDeshboardOnClick(ActionEvent event) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource("StudentDeshBoard.fxml"));
