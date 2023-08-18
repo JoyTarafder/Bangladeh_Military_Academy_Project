@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Select Option">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Financial Data" />
+                  <MenuItem mnemonicParsing="false" text="Budgeting and Planning Tools" />
+                  <MenuItem mnemonicParsing="false" text="Payment and Transaction Records" />
+                  <MenuItem mnemonicParsing="false" text="Financial System" />
+                  <MenuItem mnemonicParsing="false" text="financial aid" />
+                  <MenuItem mnemonicParsing="false" text="Financial Reporting" />
+                  <MenuItem mnemonicParsing="false" text="Stakeholder" />
+                  <MenuItem mnemonicParsing="false" text="Policy  " />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
