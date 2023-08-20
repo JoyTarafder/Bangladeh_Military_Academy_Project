@@ -52,11 +52,6 @@ public class LogpageController implements Initializable {
         
         if(username.equals("admin") && password.equals("password")){
             showAlert("Login Sccessfull!", Alert.AlertType.INFORMATION);
-//            Parent parent = FXMLLoader.load(getClass().getResource("StudentDeshBoard.fxml"));
-//            Scene newScene = new Scene (parent);
-//            Stage newStage = new Stage();
-//            newStage.setScene(newScene);
-//            newStage.show();
             Parent parent = FXMLLoader.load(getClass().getResource("StudentDeshBoard.fxml"));
             Scene newScene = new Scene (parent);
             Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -76,16 +71,38 @@ public class LogpageController implements Initializable {
             showAlert("Login Sccessfull!", Alert.AlertType.INFORMATION);
             Parent parent = FXMLLoader.load(getClass().getResource("FacultyDeshBoard.fxml"));
             Scene newScene = new Scene (parent);
-//            Stage newStage = new Stage();
             Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
             newStage.setScene(newScene);
             newStage.show();
-            
- 
         }
+        else if(username.equals("addministration") && password.equals("pass")){
+            showAlert("Login Sccessfull!", Alert.AlertType.INFORMATION);
+            Parent parent = FXMLLoader.load(getClass().getResource("Administration.fxml"));
+            Scene newScene = new Scene (parent);
+            Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            newStage.setScene(newScene);
+            newStage.show();
+        }
+//        else if(username.equals("addministration") && password.equals("pass")){
+//            showAlert("Login Sccessfull!", Alert.AlertType.INFORMATION);
+//            Parent parent = FXMLLoader.load(getClass().getResource("Administration.fxml"));
+//            Scene newScene = new Scene (parent);
+//            Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+//            newStage.setScene(newScene);
+//            newStage.show();
+//        }
+//        else if(username.equals("addministration") && password.equals("pass")){
+//            showAlert("Login Sccessfull!", Alert.AlertType.INFORMATION);
+//            Parent parent = FXMLLoader.load(getClass().getResource("Administration.fxml"));
+//            Scene newScene = new Scene (parent);
+//            Stage newStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+//            newStage.setScene(newScene);
+//            newStage.show();
+//        }
         else{
             showAlert("Invalid usename && password!\nTry Aging....",Alert.AlertType.ERROR);
-        }     
+        }
+        
     }
     
     private void showAlert(String login_sccessful, Alert.AlertType alertType){
