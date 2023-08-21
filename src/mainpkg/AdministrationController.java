@@ -39,5 +39,17 @@ public class AdministrationController implements Initializable {
         newStage.setScene(newScene);
         newStage.show();
     }
+
+    @FXML
+    private void offerCourseButtonOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void addFacultyButtonOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void addCadetButtonOnClick(ActionEvent event) {
+    }
     
 }
